@@ -10,6 +10,11 @@ namespace EncrypterPjt
     {
         static void Main(string[] args)
         {
+            string newText = Encrypter.Encrypt("Smart");
+            Console.WriteLine("Text encrypt: "+newText);
+            string decText = Encrypter.Decrypt(newText);
+            Console.WriteLine("Text decrypt: " + decText);
+            Console.Read();
         }
     }
 }
